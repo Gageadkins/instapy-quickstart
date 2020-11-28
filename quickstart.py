@@ -3,25 +3,16 @@ from instapy import InstaPy
 from instapy import smart_run
 
 # login credentials
-insta_username = ''
-insta_password = ''
+insta_username = 'oiimboredlol'
+insta_password = 'ladell298'
 
-comments = ['Nice shot! @{}',
-        'I love your profile! @{}',
-        'Your feed is an inspiration :thumbsup:',
-        'Just incredible :open_mouth:',
-        'What camera did you use @{}?',
-        'Love your posts @{}',
-        'Looks awesome @{}',
-        'Getting inspired by you @{}',
-        ':raised_hands: Yes!',
-        'I can feel your passion @{} :muscle:']
+comments = u give me the hahaha 😂😳🤓
 
 # get an InstaPy session!
 # set headless_browser=True to run InstaPy in the background
 session = InstaPy(username=insta_username,
                   password=insta_password,
-                  headless_browser=False)
+                  headless_browser=True)
 
 with smart_run(session):
   """ Activity flow """		
@@ -29,7 +20,7 @@ with smart_run(session):
   session.set_dont_include(["friend1", "friend2", "friend3"])		
   
   # activity		
-  session.like_by_tags(["natgeo"], amount=10)
+  session.like_by_tags(["#Memes #meme"], amount=10)
 
   # Joining Engagement Pods
   session.set_do_comment(enabled=True, percentage=35)
